@@ -3,4 +3,4 @@
 first_name = input('Введите свое имя - ')
 last_name = input('Введите свою фамилию - ')
 age = input('Введите свой возраст - ')
-print('Меня зовут - ' + first_name + ' ' + last_name + '\nМой возраст - ' + age)
+print(f'Меня зовут {first_name}\nМоя фамилия {last_name}\nМой возраст {age}')

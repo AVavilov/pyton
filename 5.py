@@ -1,10 +1,14 @@
 # что то тоже не так, хотя все считает
 
-a = int(input('Укажите Вашу выручку - '))
-b = int(input('Укажите Ваши издержки - '))
-if a >= b:
-    print('Ваша прибыль - ' + str(a - b))
-    count = int(input('Укажите кол-во сотрудников в фирме - '))
-    print('Прибыль на сотрудника - ' + str((a - b) / count))
+revenue = int(input('Укажите Вашу выручку - '))
+cost = int(input('Укажите Ваши издержки - '))
+result = revenue - cost
+if result > 0:
+    print(f'Ваша прибыль - {result}')
+    print(f'Рентабельность выручки {result / revenue}')
+    persons = int(input('Какое кол-во сотрудников работает на фирме - '))
+    print(f'Прибыль на сотрудника - {result / persons}')
+elif result < 0:
+    print(f'Вы работаете в убыток {result}')
 else:
-    print('Ваш убыток - ' + str(b - a))
+    print('Вы вышли в ноль')

@@ -1,8 +1,13 @@
 # То же считает, но кажется не верно )
 
-a = 2
-b = 5
-while a < b:
-    print('Бежим дальше - ' + str(a + (a / 10)))
-    a += (a * (a / 10))
-print('Прибежал')
+start = int(input('Вы стартанули с отметки - '))
+finish = int(input('Ваша цель - '))
+days = 1
+if start <= 0 or finish <= 0:
+    print('Укажите положительное число')
+else:
+    while start < finish:
+        start *= 1.1
+        days += 1
+print(f'Результат будет достигнут через {days}')
+
